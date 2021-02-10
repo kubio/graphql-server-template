@@ -1,0 +1,11 @@
+overwrite: true
+schema:
+  - "./src/schema.graphql"
+generates:
+  ./.codegen/types.ts:
+    plugins:
+      - typescript
+      - typescript-operations
+  ./.codegen/schema.json:
+    plugins:
+      - introspection
